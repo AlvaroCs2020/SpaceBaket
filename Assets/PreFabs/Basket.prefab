@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1793231627}
   - component: {fileID: 3137298699784753945}
   - component: {fileID: 2388734494236531678}
+  - component: {fileID: 4306093758912120550}
+  - component: {fileID: 8996328526031876246}
   m_Layer: 0
   m_Name: Basket
   m_TagString: Basket
@@ -46,8 +48,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.058517, y: 8.936214, z: 0.05}
-  m_Center: {x: -1.7259731, y: -9.217423, z: -0.3000216}
+  m_Size: {x: 1.6198821, y: 7.1125927, z: 0.05}
+  m_Center: {x: -5.32, y: -9.479336, z: -0.3000216}
 --- !u!114 &1793231627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +234,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &4306093758912120550
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193205502955337725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.500341, y: 9.555445, z: 0.05}
+  m_Center: {x: -1.7994959, y: -9.303436, z: -0.3000216}
+--- !u!65 &8996328526031876246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8193205502955337725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6198821, y: 7.1125927, z: 0.05}
+  m_Center: {x: 1.7856472, y: -9.479336, z: -0.3000216}
 --- !u!1 &8193205503232707869
 GameObject:
   m_ObjectHideFlags: 0

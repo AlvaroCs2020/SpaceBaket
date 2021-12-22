@@ -18,12 +18,12 @@ public class UiScore : MonoBehaviour
     public void ResetScore()
     {
         Score = 0;
-        textMesh.text = Score.ToString();
+        textMesh.text = "x" + Score.ToString();
     }
     public void IncreaseScore()
     {
         Score++;
-        textMesh.text = Score.ToString();
+        textMesh.text = "x" + Score.ToString();
     }
 
     

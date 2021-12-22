@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87acbfc68cac280428a48487d30b97f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultiplier: 15
+  forceMultiplier: 12
   audioClipArray:
   - {fileID: 8300000, guid: 11c69cae8c85b95419c083491daee5d2, type: 3}
   - {fileID: 8300000, guid: 08afbf6536cab9346812ed22ae57f5da, type: 3}

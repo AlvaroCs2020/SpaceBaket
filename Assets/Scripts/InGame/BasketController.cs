@@ -8,19 +8,20 @@ public class BasketController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
+        if(other.transform.tag == "Ball")
+        {
+            gameObject.GetComponentInChildren<Animator>().SetTrigger("Score");
+            
+            UiScore.Instance.IncreaseScore();
+            UiTotalScore.Instance.IncreaseTotalScore();
+            
+            GameController.Instance.SpawnBasket(other.transform.position);
+            GameController.Instance.SpawnBall();
+            
 
-        gameObject.GetComponentInChildren<Animator>().SetTrigger("Score");
-        
-        UiScore.Instance.IncreaseScore();
-        UiTotalScore.Instance.IncreaseTotalScore();
-        
-        GameController.Instance.SpawnBasket();
-        Destroy(gameObject,0.3f);
-        Destroy(other.gameObject,0.5f);
-        
-        
-        GameController.Instance.SpawnBall();
-        // GameController.Instance.SpawnBasket();
+            Destroy(gameObject,0.3f);
+            Destroy(other.gameObject);
+        }
 
     }
 }
