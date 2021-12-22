@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - DrawTrajectory
     - GameController
     - HoopScore
+    - KeepAudio
     - MainMenuController
     - ResetScreen
     - RotateBall
@@ -115,6 +116,10 @@ ScriptsOnlyBuild:
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -230,6 +235,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7006}
     - Class: 114
       Script: {instanceID: 7092}
+    - Class: 114
+      Script: {instanceID: 26214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -530,7 +537,7 @@ ScriptsOnlyBuild:
     className: XRSystemData
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 7d0c5f972b3104d1d22508bf6d591fd5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ResetScreen
@@ -752,7 +759,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 9619c3d8dbe1ed1d42f54bf007a424df
+      Hash: 3b1e07f86199d12e2ec839a900b362dd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragAndShoot
@@ -1424,7 +1431,7 @@ ScriptsOnlyBuild:
     className: Volume
   - hash:
       serializedVersion: 2
-      Hash: 8440962fdc2451a137c7774b83836ee2
+      Hash: 559e670501cbbff7070efcb44801d05c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DrawTrajectory
@@ -1458,8 +1465,14 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark01
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeepAudio
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: H:/Projects/Apk/SpaceBasket04.apk
+  playerPath: H:/Projects/Apk/SpaceBasket06.apk

@@ -18,8 +18,9 @@ public class GameController : MonoBehaviour
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * 9f);
     }
     public void SpawnBall()
-    {
-        Instantiate(Ball,startPoint.position,Quaternion.Euler(Random.Range(0,180),Random.Range(0,180),Random.Range(0,180)));
+    {   
+        if(GameObject.FindGameObjectsWithTag("Ball").Length == 1)
+            Instantiate(Ball,startPoint.position,Quaternion.Euler(Random.Range(0,180),Random.Range(0,180),Random.Range(0,180)));
     }
     public void SpawnBasket()
     {
@@ -27,6 +28,7 @@ public class GameController : MonoBehaviour
         float x =Random.Range(-30.0f, 30.0f);
         float y =Random.Range(-12.0f, 2f);
         float z =Random.Range(3f, 14f);
-        Instantiate(Basket,new Vector3(x,y,z),Quaternion.Euler(-90, x/30*50 , 0 ));
+        if(GameObject.FindGameObjectsWithTag("Basket").Length <= 1)
+            Instantiate(Basket,new Vector3(x,y,z),Quaternion.Euler(-90, x/30*50 , 0 ));
     }
 }

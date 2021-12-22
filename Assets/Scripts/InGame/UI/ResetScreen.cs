@@ -8,7 +8,9 @@ public class ResetScreen : MonoBehaviour
     public static ResetScreen Instance;
     private RectTransform rectTransform;
     private TMPro.TextMeshProUGUI highScoreText;
+    public bool gameEnd = false;
     private bool paused = false;
+
     void Start()
     {
         Instance = this;
@@ -20,12 +22,13 @@ public class ResetScreen : MonoBehaviour
     }
     public void Pause()
     {
-        if (paused)
+        Debug.Log(paused && !gameEnd);
+        if (paused && !gameEnd)
         {
             Hide();
             Time.timeScale = 1f;
         }
-        else
+        else if(!paused && !gameEnd)
         {
             Show();
             Time.timeScale = 0f;
@@ -48,5 +51,10 @@ public class ResetScreen : MonoBehaviour
     public void ExitGame()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+    public void ResetGame()
+    {
+        gameEnd = true;
+        SceneManager.LoadScene("SampleScene");
     }
 }

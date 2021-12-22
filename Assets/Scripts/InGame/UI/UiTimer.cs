@@ -23,6 +23,7 @@ public class UiTimer : MonoBehaviour
             if(Timer == 1)
             {
                 Time.timeScale = 0f;
+                ResetScreen.Instance.gameEnd = true;
                 ResetScreen.Instance.Show();
             }
             Timer--;

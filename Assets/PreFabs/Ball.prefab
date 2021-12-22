@@ -118,6 +118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 15
+  audioClipArray:
+  - {fileID: 8300000, guid: 11c69cae8c85b95419c083491daee5d2, type: 3}
+  - {fileID: 8300000, guid: 08afbf6536cab9346812ed22ae57f5da, type: 3}
+  - {fileID: 8300000, guid: 2eeac068bf0f46a4a89ebece3a7bdc87, type: 3}
 --- !u!114 &2712724739847627382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +265,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 100
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

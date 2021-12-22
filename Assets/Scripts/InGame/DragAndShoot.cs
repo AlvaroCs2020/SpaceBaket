@@ -9,7 +9,7 @@ public class DragAndShoot : MonoBehaviour
     [SerializeField] private float forceMultiplier = 15;
 
     private AudioSource audioSource;
-
+    public AudioClip[] audioClipArray;
     private Vector3 mousePressDownPos;
     private Vector3 mouseReleasePos;
 
@@ -54,7 +54,10 @@ public class DragAndShoot : MonoBehaviour
         if(Force.y<0)
             forceMultiplier = -forceMultiplier;
         
-        audioSource.Play();
+        audioSource.pitch = Random.Range(0.85f,1.15f);    
+        audioSource.clip = audioClipArray[Random.Range(0,audioClipArray.Length)];
+        audioSource.PlayOneShot(audioSource.clip);
+        
         rb.AddForce(new Vector3(Force.x,Force.y,Force.y)* forceMultiplier);
         isShoot = true;
     }
