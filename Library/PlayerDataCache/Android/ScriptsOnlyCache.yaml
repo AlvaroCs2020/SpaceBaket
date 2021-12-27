@@ -49,7 +49,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.Bloom
     - UnityEngine.Rendering.Universal.ChromaticAberration
     - UnityEngine.Rendering.Universal.ColorAdjustments
-    - UnityEngine.Rendering.Universal.FilmGrain
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.Tonemapping
@@ -69,8 +68,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -227,8 +228,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5922}
     - Class: 114
-      Script: {instanceID: 5960}
-    - Class: 114
       Script: {instanceID: 6022}
     - Class: 114
       Script: {instanceID: 6064}
@@ -355,8 +354,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5410}
     - Class: 114
       Script: {instanceID: 5704}
-    - Class: 114
-      Script: {instanceID: 5960}
     - Class: 114
       Script: {instanceID: 7006}
     - Class: 114
@@ -900,7 +897,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerEnumHistory
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 8b446b8df1f06c39b64cabb1becb672e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UiTimer
@@ -1490,4 +1487,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: H:/Projects/Apk/SpaceBasket10.apk
+  playerPath: H:/Projects/Apk/SpaceBasket11.apk

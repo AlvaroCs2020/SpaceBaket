@@ -13,6 +13,7 @@ public class BasketController : MonoBehaviour
             gameObject.GetComponentInChildren<Animator>().SetTrigger("Score");
             
             UiScore.Instance.IncreaseScore();
+            UiTimer.Instance.MoreTime();
             UiTotalScore.Instance.IncreaseTotalScore();
             
             GameController.Instance.SpawnBasket(other.transform.position);

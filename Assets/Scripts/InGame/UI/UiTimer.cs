@@ -5,14 +5,17 @@ using UnityEngine;
 public class UiTimer : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float timePlusVel;
     private TMPro.TextMeshProUGUI textMesh;
-    private int Timer = 60;
+    private int Timer = 30;
     private float timer = 0;
-
-    public static UiTotalScore Instance;
+    private Animator animator;
+    public static UiTimer Instance;
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
+        animator = GetComponentInChildren<Animator>();
         textMesh = GetComponent<TMPro.TextMeshProUGUI>();
     }
     void Update()
@@ -31,8 +34,11 @@ public class UiTimer : MonoBehaviour
         }
             
         textMesh.text = Timer.ToString();
+    }
 
-
-
+    public void MoreTime()
+    {
+        Timer += 5;
+        animator.SetTrigger("MoreTime");
     }
 }
